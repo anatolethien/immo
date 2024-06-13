@@ -8,26 +8,47 @@ This document provides a detailed description of the dataset, including the numb
 
 | Column Name    | Data Type   | Description                                                                   |
 |----------------|-------------|-------------------------------------------------------------------------------|
-| id_mutation    | String      | Année de la transaction - id de la transaction                                |
-| date_mutation  | Date      | Date de la transaction                                                     |
-| numero_disposition       | Int      | The category of the data point                                                |
-| nature_mutation          | String       | type de vente : vente de bien ou bien immo à construire ou en cours de contruction                            |
-| valeur_fonciere    | Float      | Valeur immobiliaire du bien                              |
-| adresse_numero    | Float      | Numéro de la rue                              |
-| adresse_suffixe    | Sring      | si le numéro de la rue est un Bis ou pas                              |
-| adresse_nom_voie    | Int      |                               |
-| code_postal    | Int      | code postal                              |
-| code_commune    | Int      | code commune                              |
-| nom_commune    | String      | nom de la ville / village                             |
-| code_departement    | Int      | numéro du département                              |
-| ancien_nom_commune    | String      | ancien code commune                              |
-| ancien_code_commune    | Int      | ancien code commune                              |
-| ancien_nom_commune    | Int      | ancien code commune                              |
-| ancien_code_commune    | Int      | ancien code commune                              |
-| ancien_code_commune    | Int      | ancien code commune                              |
-| ancien_code_commune    | Int      | ancien code commune                              |
-| ancien_code_commune    | Int      | ancien code commune                              |
-| ancien_code_commune    | Int      | ancien code commune                              |
+| id_mutation    | Object      | Identifiant unique pour chaque mutation de propriété.                                |
+| date_mutation  | Object      | Date de la transaction immobilière.                                                     |
+| numero_disposition       | Object      | Numéro de disposition pour la transaction.                                                |
+| nature_mutation          | Object       | Type de transaction (par exemple, vente, donation).                           |
+| valeur_fonciere    | Object      | Valeur de la transaction immobilière.                              |
+| adresse_numero    | Object      | Numéro de rue de l'adresse de la propriété.                              |
+| adresse_suffixe    | Object      | Suffixe d'adresse (par exemple, BIS, TER).                              |
+| adresse_nom_voie    | Object      | Nom de la rue où se trouve la propriété.                              |
+| adresse_code_voie    | Object      | Code de la rue.                              |
+| code_postal    | Object      | Code postal de l'emplacement de la propriété.                              |
+| code_commune    | Object      | Code commune de l'emplacement de la propriété.                             |
+| nom_commune    | Object      | Nom de la commune.                             |
+| code_departement    | Object      | Code du département.                              |
+| ancien_code_commune    | Object      | Ancien code de la commune.                              |
+| ancien_nom_commune    | Object      | Ancien nom de la commune.                              |
+| id_parcelle    | Object      | Identifiant de la parcelle.                             |
+| ancien_id_parcelle    | Object      | Ancien identifiant de la parcelle.                              |
+| numero_volume    | Object      | Numéro de volume.                              |
+| lot1_numero    | Object      | Numéro du lot 1.                              |
+| lot1_surface_carrez    | Object      | Surface Carrez du lot 1.                              |
+| lot2_numero    | Object      | Numéro du lot 2.                              |
+| lot2_surface_carrez    | Object      | Surface Carrez du lot 2.                              |
+| lot3_numero    | Object      | Numéro du lot 3.                              |
+| lot3_surface_carrez    | Object      | Surface Carrez du lot 3.                              |
+| lot4_numero    | Object      | Numéro du lot 4.                              |
+| lot4_surface_carrez    | Object      | Surface Carrez du lot 4.                              |
+| lot5_numero    | Object      | Numéro du lot 5.                              |
+| lot5_surface_carrez    | Object      | Surface Carrez du lot 5.                              |
+| nombre_lots    | Object      | Nombre de lots.                              |
+| code_type_local    | Object      | Code indiquant le type de bien immobilier (par exemple, appartement, maison).                              |
+| type_local    | Object      | Type de bien immobilier.                              |
+| surface_reelle_bati    | Object      | Surface réelle bâtie.                              |
+| nombre_pieces_principales    | Object      | Nombre de pièces principales.                              |
+| code_nature_culture    | Object      | Code indiquant la nature de l'utilisation du terrain.                              |
+| nature_culture    | Object      | Nature de l'utilisation du terrain (par exemple, vignoble, verger).                              |
+| code_nature_culture_speciale    | Object      | Code pour une utilisation spéciale du terrain.                              |
+| nature_culture_speciale    | Object      | Nature spéciale de l'utilisation du terrain.                              |
+| surface_terrain    | Object      | Surface du terrain.                              |
+| longitude    | Object      | Coordonnée de longitude de la propriété.                              |
+| latitude    | Object      | Coordonnée de latitude de la propriété.                              |
+| section_prefixe    | Object      | Préfixe de la section.                              |
 
 ## Data Quality
 
