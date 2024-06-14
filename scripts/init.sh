@@ -4,6 +4,8 @@ file="data/dvf.csv"
 temp_file=$(mktemp)
 endpoint="https://dvf-api.data.gouv.fr/dvf/csv/?dep=31"
 
+mkdir data
+
 curl "https://dvf-api.data.gouv.fr/dvf/csv/?dep=31" --output "$file"
 
 header=$(head -n 1 "$file")
